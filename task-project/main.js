@@ -1,21 +1,28 @@
 import './style.css'
+import { questions } from "./counter";
 
-// document.querySelector('#app').innerHTML = `
-//   <div>
-//     <a href="https://vitejs.dev" target="_blank">
-//       <img src="${viteLogo}" class="logo" alt="Vite logo" />
-//     </a>
-//     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-//       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-//     </a>
-//     <h1>Hello Vite!</h1>
-//     <div class="card">
-//       <button id="counter" type="button"></button>
-//     </div>
-//     <p class="read-the-docs">
-//       Click on the Vite logo to learn more
-//     </p>
-//   </div>
-// `
+let score = 0;
 
-// setupCounter(document.querySelector('#counter'))
+for (let i = 0; i < questions.length; i++) {
+  const currentQuestion = questions[i];
+
+  console.log(currentQuestion.question);
+
+  for (let j = 0; j < currentQuestion.answers.length; j++) {
+    console.log(`${j+1}. ${currentQuestion.answers[j]}`); 
+  }
+
+  const userAnswer = prompt("Please enter the number of your answer:");
+  
+  if (currentQuestion.answers[userAnswer-1] === currentQuestion.correctAnswer) {
+    console.log("Correct!");
+    score++;
+  } else {
+    console.log("Incorrect!");
+  }
+
+  console.log(`Your current score is: ${score}`);
+  console.log("");
+}
+
+console.log(`You got ${score} out of ${questions.length} questions correct!`);

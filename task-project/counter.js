@@ -1,4 +1,4 @@
-const millionaireQuestions = [
+const Questions = [
     {
       question: "What is the capital city of France?",
       options: ["London", "Paris", "Berlin", "Rome"],
@@ -35,4 +35,4 @@ const millionaireQuestions = [
       answer: 0
      },
   ];
-  
+export {counter};
