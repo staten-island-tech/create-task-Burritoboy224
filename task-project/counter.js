@@ -26,11 +26,35 @@ const questions = [
   },
   {
     question: "Who made the iphone", 
-    answers: ["Steve Job", "Jayla Ye", "Steve Trabajo", "Kieran Watt"],
-    correctAnswer: "Steve Job"
+    answers: ["Steve Jobs", "Jayla Ye", "Steve Trabajo", "Kieran Watt"],
+    correctAnswer: "Steve Jobs"
   },
   
-  
+  {
+    question: "Who made the Pineapple Iphone", 
+    answers: ["Steve Jobs", "Jayla Ye", "Steve Trabajo", "Kieran Watt"],
+    correctAnswer: "Steve Trabajo"
+  },
+
+
+  {
+    question: "A geologist would likely be LEAST helpful for answering questions about which of the following?", 
+    answers: ["Rocks", "Diamonds", "Granite", "Fruity Pebbles"],
+    correctAnswer: "Fruity Pebbles"
+  },
+
+  {
+    question: "A person who is not a banker and lends money at an extremely high interest rate is known as what?", 
+    answers: ["Loan Shark", "Green Snake", "Paper Tiger", "Loan Eagles"],
+    correctAnswer: "Loan Shark"
+  },
+
+  {
+    question: "According to studies, what should a typical teenager spend up to 10 hours a night doing?", 
+    answers: ["Party", "Tweeting", "Surfing", "Sleeping"],
+    correctAnswer: "Sleeping"
+  },
+
 ];
 
 export {questions};
